@@ -1,0 +1,72 @@
+<!--Store this code in 'display.html' file inside the 'templates' folder-->
+
+<html lang="ru">
+	<head>
+		<title>Данные</title>
+		<link rel="stylesheet" href="../static/style.css">
+	</head>
+	<body bgcolor="#e6ffee">
+		<div class="one">
+			<div class="two">
+				<h1>Side Bar</h1>
+				<ul>
+					<li><a href="{{url_for('index')}}">Главная</a></li>
+					<li class="active"><a href="{{url_for('display')}}">Данные</a></li>
+					<li><a href="{{url_for('update')}}">Обновить Данные</a></li>
+					<li><a href="{{url_for('logout')}}">Выйти</a></li>
+				</ul>
+			</div>
+			<div class="content" align="center">
+				<div class="topbar">
+					<h2>Вы на странице с вашими данными </h2>
+				</div> </br>
+				<div class="contentbar">
+					<h1>Ваши данные</h1> </br>
+					{% block content %}
+						<div class="border">
+							<table class="worddark"></br></br></br></br>
+								<tr>
+									<td>Имя аккаунта:</td>
+									<td>{{ account[1] }}</td>
+								</tr>
+								<tr>
+									<td>Пароль:</td>
+									<td>{{ account[2] }}</td>
+								</tr>
+								<tr>
+									<td>Email:</td>
+									<td>{{ account[3] }}</td>
+								</tr>
+								<tr>
+									<td>Организация:</td>
+									<td>{{ account[4] }}</td>
+								</tr>
+								<tr>
+									<td>Адрес:</td>
+									<td>{{ account[5] }}</td>
+								</tr>
+								<tr>
+									<td>Город:</td>
+									<td>{{ account[6] }}</td>
+								</tr>
+								<tr>
+									<td>Регион:</td>
+									<td>{{ account[7] }}</td>
+								</tr>
+								<tr>
+									<td>Страна:</td>
+									<td>{{ account[8] }}</td>
+								</tr>
+								<tr>
+									<td>Почтовый индекс:</td>
+									<td>{{ account[9] }}</td>
+								</tr>
+							</table>
+						</div>
+					{% endblock %}
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>

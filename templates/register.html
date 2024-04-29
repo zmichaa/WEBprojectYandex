@@ -1,0 +1,31 @@
+<!-- Сохраните этот код в файле 'register.html' в папке 'templates' -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Регистрация</title>
+		<link rel="stylesheet" href="../static/style.css">
+	</head>
+	<body>
+		<div class="registercontent" align="center">
+			<div class="registertop">
+				<h1>Регистрация</h1>
+			</div></br></br>
+			<div class="registerbottom">
+			<form action="{{ url_for('register')}}" method="post" autocomplete="off">
+			<div class="msg">{{ msg }}</div>
+			<input type="text" name="username" placeholder="Введите ваше имя пользователя" class="textbox" id="username" required></br></br>
+			<input type="password" name="password" placeholder="Введите ваш пароль" class="textbox" id="password" required></br></br>
+			<input type="email" name="email" placeholder="Введите вашу электронную почту" class="textbox" id="email" required></br></br>
+			<input type="text" name="organisation" placeholder="Введите вашу организацию" class="textbox" id="organisation" required></br></br>
+			<input type="text" name="address" placeholder="Введите ваш адрес" class="textbox" id="address" required></br></br>
+			<input type="text" name="city" placeholder="Введите ваш город" class="textbox" id="city" required></br></br>
+			<input type="text" name="region" placeholder="Введите ваш регион" class="textbox" id="region" required></br></br>
+			<input type="text" name="country" placeholder="Введите вашу страну" class="textbox" id="country" required></br></br>
+			<input type="text" name="postalcode" placeholder="Введите ваш почтовый индекс" class="textbox" id="postalcode" required></br></br>
+			<input type="submit" class="btn" value="Зарегистрироваться">
+			</form>
+			<p class="worddark">Уже есть аккаунт? <a class="worddark" href="{{ url_for('login')}}">Войдите здесь</a></p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- Сохраните этот код в файле 'update.html' в папке 'templates' -->
+<html lang="ru">
+	<head>
+		<title>Обновление Данных</title>
+		<link rel="stylesheet" href="../static/style.css">
+	</head>
+	<body bgcolor="#e6ffee">
+		<div class="one">
+			<div class="two">
+				<h1>Боковая панель</h1>
+				<ul>
+					<li><a href="{{url_for('index')}}">Главная</a></li>
+					<li><a href="{{url_for('display')}}">Данные</a></li>
+					<li class="active"><a href="{{url_for('update')}}">Обновить Данные</a></li>
+					<li><a href="{{url_for('logout')}}">Выйти</a></li>
+				</ul>
+			</div>
+			<div class="content" align="center">
+				<div class="topbar">
+					<h2>Вы на странице обновления данных </h2>
+				</div></br></br>
+				<div class="contentbar">
+				<h1>Заполните Ваши данные для обновления</h1></br>
+			<form action="{{ url_for('update') }}" method="post" autocomplete="off">
+					<div class="msg">{{ msg }}</div>
+					<input type="text" name="username" placeholder="Введите Ваше имя пользователя" class="textbox" id="username" required></br></br>
+					<input type="password" name="password" placeholder="Введите Ваш пароль" class="textbox" id="password" required></br></br>
+					<input type="email" name="email" placeholder="Введите вашу электронную почту" class="textbox" id="email" required></br></br>
+					<input type="text" name="organisation" placeholder="Введите Вашу организацию" class="textbox" id="organisation" required></br></br>
+					<input type="text" name="address" placeholder="Введите Ваш адрес" class="textbox" id="address" required></br></br>
+					<input type="text" name="city" placeholder="Введите Ваш город" class="textbox" id="city" required></br></br>
+					<input type="text" name="region" placeholder="Введите Ваш регион" class="textbox" id="region" required></br></br>
+					<input type="text" name="country" placeholder="Введите Вашу страну" class="textbox" id="country" required></br></br>
+					<input type="text" name="postalcode" placeholder="Введите Ваш почтовый индекс" class="textbox" id="postalcode" required></br></br>
+					<input type="submit" class="btn" value="Обновить">
+			</form>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,146 @@
+/*Store this code in 'style.css' file inside the 'static' folder*/
+
+.logincontent{
+	margin: 0 auto;
+	height: 500px;
+	width: 400px;
+	background-color: #6cffe4е;
+	border-radius: 10px;
+}
+
+.registercontent{
+	margin: 0 auto;
+	height: 720px;
+	width: 400px;
+	background-color: #6cffe4е;
+	border-radius: 10px;
+}
+
+.logintop{
+	height: 60px;
+	width: 400px;
+	background-color: #42aaff;
+	color: #ffffff;
+}
+
+.registertop{
+	height: 60px;
+	width: 400px;
+	background-color: #42aaff;
+	color: #ffffff;
+}
+
+.textbox{
+	padding: 10px 30px;
+	background-color: #42aaff;
+	border-radius: 10px;
+	width: 320px;
+}
+
+::placeholder {
+	color: #FFFFFF;
+	opacity: 1;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+.btn {
+	padding: 10px 40px;
+	background-color: #42aaff;
+	color: #FFFFFF;
+	font-style: oblique;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+.worddark{
+	color: #42aaff;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+.wordlight{
+	color: #FFFFFF;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.one{
+	display: flex;
+	position: relative;
+}
+
+.one .two{
+	width: 225px;
+	height: 100%;
+	background: #42aaff;
+	padding: 30px 0px;
+	position: fixed;
+}
+
+.one .two h1{
+	color: #42aaff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 30px;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+.one .two h2{
+	color: #fff;
+	text-align: center;
+}
+
+.one .two .active{
+	background: #6cffe4;
+}
+
+.one .two ul li{
+	text-align: center;
+	padding: 15px;
+	border-bottom: 0.1px solid white;
+	border-top: 0.1px solid white;
+}
+
+.one .two ul li a{
+	color: #ffffff;
+	display: block;
+}
+
+.one .two ul li a .side{
+	width: 25px;
+	align:center;
+}
+
+.one .content{
+	width: 100%;
+	margin-left: 200px;
+}
+
+.one .content .topbar{
+	text-align: center;
+	padding: 20px;
+	background: #6cffe4;
+	color: white;
+}
+
+.one .content .contentbar{
+	margin: auto;
+}
+
+.one .content .contentbar h1{
+	color: #42aaff;
+	text-align: center;
+	font-style: oblique;
+	font-weight: bold;
+}

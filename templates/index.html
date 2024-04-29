@@ -1,0 +1,30 @@
+<!-- Сохраните этот код в файле 'index.html' в папке 'templates' -->
+<html lang="ru">
+	<head>
+		<title>Главная</title>
+		<link rel="stylesheet" href="../static/style.css">
+	</head>
+
+	<body bgcolor="#e6ffee">
+		<div class="one">
+			<div class="two">
+				<h1>Боковая панель</h1>
+				<ul>
+					<li class="active"><a href="{{url_for('index')}}">Главная</a></li>
+					<li><a href="{{url_for('display')}}">Данные</a></li>
+					<li><a href="{{url_for('update')}}">Обновить Данные</a></li>
+					<li><a href="{{url_for('logout')}}">Выйти</a></li>
+				</ul>
+			</div>
+			<div class="content" align="center">
+				<div class="topbar">
+					<h2>Добро пожаловать! Вы на главной странице!</h2>
+				</div></br></br>
+				<div class="contentbar">
+					<div class="msg">{{ msg }}</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>
